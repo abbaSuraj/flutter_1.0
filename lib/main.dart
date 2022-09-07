@@ -4,12 +4,19 @@ void main() {
   runApp(
     MaterialApp(
       home: Scaffold(
+        backgroundColor: Colors.blue,
         appBar: AppBar(
           backgroundColor: Colors.blueAccent,
-          title: Text('Abba Suraj'),
+          title: Center(
+            child: Text('Abba Suraj'),
+          ),
         ),
-        body: Image(
-          image: AssetImage('images/abba.jpg'),
+        body: Container(
+          child: Center(
+            child: Image(
+              image: AssetImage('images/abba.jpg'),
+            ),
+          ),
         ),
       ),
     ),
